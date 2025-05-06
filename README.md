@@ -20,17 +20,16 @@ This repository contains code and documentation for the classification of runnin
 ## Project Structure
 ```
 ├── src/                       # Source code for model training and evaluation
-├── data/                      # Project data
-│   ├── raw/                   # Raw biomechanical kinematic dataset
-│   └── processed/             # Cleaned and transformed data ready for analysis
-├── notebooks/                 # Jupyter notebooks for exploration & visualization
-├── docs/                      # Documentation & manuscripts
-│   ├── paper/                 # Supplementary manuscript and related materials
-│   ├── report/                # Technical reports
-│   └── presentation/          # Slide decks and presentations
-├── assets/                    # Supporting assets
-│   └── fonts/                 # Custom fonts for graphics
-├── requirements.txt           # Python dependencies
+├── Data/                      # Project data
+│   ├── Raw Dataset/           # Raw biomechanical kinematic dataset
+├── Notebook/                  # Jupyter notebook for exploration & visualization
+├── Docs/                      # Documentation & manuscripts
+│   ├── Complementary Paper/   # Supplementary manuscript 
+│   ├── Report/                # Technical report
+│   └── Presentation/          # Slide decks and presentations
+├── Assets/                    # Supporting assets
+│   └── Fonts/                 # Custom fonts for graphics
+├── Requirements.txt           # Python dependencies
 ├── .gitattributes             # Git attributes configuration
 └── README.md                  # Project overview and setup instructions
 ```
