@@ -14,7 +14,6 @@ This repository contains code and documentation for the classification of runnin
 * [Evaluation Metrics](#evaluation-metrics)
 * [Results](#results)
 * [Directory Layout](#directory-layout)
-* [License](#license)
 * [Contact](#contact)
   
 ## Project Structure
@@ -120,10 +119,7 @@ Detailed evaluation reports and plots are available in the `results/` directory.
 ## Directory Layout
 
 Refer to the [Project Structure](#project-structure) section for an overview of folders and files.
-
-## License
-
-This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
+\
 
 ## Contact
 
