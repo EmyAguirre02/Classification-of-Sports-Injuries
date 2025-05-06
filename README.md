@@ -18,7 +18,7 @@ This repository contains code and documentation for the classification of runnin
 * [Contact](#contact)
   
 ## Project Structure
-
+```
 ├── src/                       # Source code for model training and evaluation
 ├── data/                      # Project data
 │   ├── raw/                   # Raw biomechanical kinematic dataset
@@ -33,7 +33,7 @@ This repository contains code and documentation for the classification of runnin
 ├── requirements.txt           # Python dependencies
 ├── .gitattributes             # Git attributes configuration
 └── README.md                  # Project overview and setup instructions
-
+```
 
 ## Dataset
 
