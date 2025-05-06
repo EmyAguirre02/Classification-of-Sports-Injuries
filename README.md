@@ -14,25 +14,21 @@ This repository contains code and documentation for the classification of runnin
 * [Evaluation Metrics](#evaluation-metrics)
 * [Results](#results)
 * [Directory Layout](#directory-layout)
-* [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
-
+  
 ## Project Structure
 
 ```
-├── data/                   # Raw and processed datasets
-│   ├── raw/                # Original downloaded data files
-│   └── processed/          # Cleaned and preprocessed data
-├── notebooks/              # Jupyter notebooks for exploration and visualization
-├── src/                    # Source code
-│   ├── preprocess.py       # Data loading and preprocessing pipeline
-│   ├── train_models.py     # Training scripts for ML models
-│   ├── evaluate.py         # Evaluation and metric calculation
-│   └── utils.py            # Utility functions
-├── results/                # Trained models and saved evaluation reports
-├── requirements.txt        # Python dependencies
-└── README.md               # Project overview and instructions
+├── src/                   # Source code for model training and evaluation
+├── Complementary_Paper/   # Supplementary manuscript and related materials
+├── Dataset/               # Raw biomechanical kinematic data
+├── Documents/             # Reports, proposals, and documentation
+├── notebooks/             # Jupyter notebooks for exploration and visualization
+├── Text_Font/             # Custom fonts and LaTeX style files
+├── requirements.txt       # Python dependencies
+├── .gitattributes         # Git attributes configuration
+└── README.md              # Project overview and instructions
 ```
 
 ## Dataset
@@ -93,11 +89,9 @@ We compare five supervised classifiers:
 * **Gaussian Naive Bayes (GNB)**: Assumes feature independence and Gaussian distributions.
 * **Multi-Layer Perceptron (MLP/FFBP)**:
 
-* **MLP1 (FFBP1)**: Two hidden layers (2×input_dim, input_dim), ReLU activations; single-unit output layer with sigmoid activation; trained using the Adam optimizer (lr=1e-4) and binary crossentropy loss.
-
-* **MLP2 (FFBP2)**: Two hidden layers (½×input_dim, input_dim), ReLU activations; single-unit sigmoid output; includes Dropout (0.5) for regularization; trained with Adam (lr=1e-4) and binary crossentropy.
-
-* **MLP3 (FFBP3)**: Single hidden layer (input_dim), ReLU activation; single-unit sigmoid output; trained with Adam (lr=1e-4) using binary crossentropy loss.
+  * **MLP1 (FFBP1)**: Two hidden layers (2×input\_dim, input\_dim), ReLU activations; single-unit output layer with sigmoid activation; trained using the Adam optimizer (lr=1e-4) and binary crossentropy loss.
+  * **MLP2 (FFBP2)**: Two hidden layers (½×input\_dim, input\_dim), ReLU activations; single-unit sigmoid output; includes Dropout (0.5) for regularization; trained with Adam (lr=1e-4) and binary crossentropy.
+  * **MLP3 (FFBP3)**: Single hidden layer (input\_dim), ReLU activation; single-unit sigmoid output; trained with Adam (lr=1e-4) using binary crossentropy loss.
 
 ## Evaluation Metrics
 
@@ -120,18 +114,19 @@ Detailed evaluation reports and plots are available in the `results/` directory.
 * Random Forest showed robust precision but lower recall in certain injury classes.
 * SVM with RBF kernel balanced precision and recall moderately well.
 
-## Contributing
+## Directory Layout
 
-Contributions are welcome! Please follow these steps:
+Refer to the [Project Structure](#project-structure) section for an overview of folders and files.
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/YourFeature`)
-3. Commit your changes (`git commit -m "Add YourFeature"`)
-4. Push to the branch (`git push origin feature/YourFeature`)
-5. Open a Pull Request
+## License
 
+This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 ## Contact
 
 María Emilia Aguirre 
+
+
+
+
 
