@@ -8,8 +8,6 @@ This repository contains code and documentation for the classification of runnin
 
 * [Project Structure](#project-structure)
 * [Dataset](#dataset)
-* [Environment Setup](#environment-setup)
-* [Usage](#usage)
 * [Model Architectures](#model-architectures)
 * [Evaluation Metrics](#evaluation-metrics)
 * [Results](#results)
@@ -40,52 +38,13 @@ We use the **Running Injury Clinic Kinematic Dataset**, which contains biomechan
 * **Features**: Joint angles, moments, and temporal gait parameters
 * **Labels**: Injury type (binary or multi-class)
 * **Splits**: 70% training (with 10‑fold CV), 30% hold-out test
-
-## Environment Setup
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/yourusername/running-injury-classification.git
-   cd running-injury-classification
-   ```
-2. Create and activate a virtual environment:
-
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
-3. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-## Usage
-
-1. **Preprocess data**:
-
-   ```bash
-   python src/preprocess.py --input data/raw --output data/processed
-   ```
-2. **Train models**:
-
-   ```bash
-   python src/train_models.py --data data/processed --models all
-   ```
-3. **Evaluate performance**:
-
-   ```bash
-   python src/evaluate.py --models results/models --metrics accuracy precision recall f1 auc
-   ```
-4. **Visualize results**:
-   Open the Jupyter notebooks in `notebooks/` for exploratory analysis and plotting.
+* 
 
 ## Model Architectures
 
 We compare five supervised classifiers:
 
-* **Random Forest (RF)**: Ensemble of decision trees, default `n_estimators=100`, criterion=`entropy`.
+* **Random Forest (RF)**: Ensemble of decision trees, default `n_estimators=100`, `n_estimators=75`, `n_estimators=125`, and criterion=`entropy`.
 * **Support Vector Machine (SVM)**: Linear, polynomial (degree=3), and RBF kernels.
 * **K-Nearest Neighbors (KNN)**: k=3, 5, 7 with Euclidean distance.
 * **Gaussian Naive Bayes (GNB)**: Assumes feature independence and Gaussian distributions.
@@ -112,7 +71,7 @@ Cross-validation (10‑fold) is used on the training split; final metrics are re
 
 Detailed evaluation reports and plots are available in the `results/` directory. Highlights:
 
-* **FFBP2** achieved the highest average F1-Score (0.XX ± 0.XX) across folds.
+* **FFBP2** achieved the highest average F1-Score (0.977 ± 0.012) across folds.
 * Random Forest showed robust precision but lower recall in certain injury classes.
 * SVM with RBF kernel balanced precision and recall moderately well.
 
@@ -123,7 +82,7 @@ Refer to the [Project Structure](#project-structure) section for an overview of 
 
 ## Contact
 
-María Emilia Aguirre 
+María Emilia Aguirre (aguirremariaemilia4@gmail.com)
 
 
 
