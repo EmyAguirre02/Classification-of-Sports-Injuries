@@ -67,8 +67,6 @@ Cross-validation (10‑fold) is used on the training split; final metrics are re
 
 ## Results
 
-Detailed evaluation reports and plots are available in the `results/` directory. Highlights:
-
 * **FFBP2** achieved the highest average F1-Score (0.977 ± 0.012) across folds.
 * Random Forest showed robust precision but lower recall in certain injury classes.
 * SVM with RBF kernel balanced precision and recall moderately well.
