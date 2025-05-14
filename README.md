@@ -23,7 +23,6 @@ This repository contains code and documentation for the classification of runnin
 ├── Docs/                      # Documentation & manuscripts
 │   ├── Complementary Paper/   # Supplementary manuscript 
 │   ├── Report/                # Technical report
-│   └── Presentation/          # Slide decks and presentations
 ├── Assets/                    # Supporting assets
 │   └── Fonts/                 # Custom fonts for graphics
 ├── Requirements.txt           # Python dependencies
