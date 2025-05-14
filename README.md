@@ -37,8 +37,7 @@ We use the **Running Injury Clinic Kinematic Dataset**, which contains biomechan
 * **Features**: Joint angles, moments, and temporal gait parameters
 * **Labels**: Injury type (binary or multi-class)
 * **Splits**: 70% training (with 10‑fold CV), 30% hold-out test
-* 
-
+  
 ## Model Architectures
 
 We compare five supervised classifiers:
