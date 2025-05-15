@@ -74,7 +74,6 @@ Cross-validation (10‑fold) is used on the training split; final metrics are re
 ## Directory Layout
 
 Refer to the [Project Structure](#project-structure) section for an overview of folders and files.
-\
 
 ## Contact
 
